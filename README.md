@@ -1,4 +1,4 @@
-# Stock_analysis
+# Stock Analysis Coding Task
 
 ### This was a coding task set by Codedex in the Python course. I decided to code this using VS Code as I want to build a portfolio of python finance related projects. 
 
