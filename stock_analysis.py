@@ -17,6 +17,7 @@ def min_price(a, b):
     mn = min(mn, price_at(i)) #Compares the price found against the intial stock price
   return mn
 
+# Call each function
 print(price_at(4))
 print(max_price(4,5))
 print(min_price(6,10))
