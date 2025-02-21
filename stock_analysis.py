@@ -5,15 +5,15 @@ stock_prices = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.65, 5
 def price_at(i):
   return stock_prices[i-1] #Subtract 1 because indexing start at 0, this will allow the code to give an inclusive price
 
-def max_price(a,b):
+def max_price(a, b):
   mx = price_at(a) #Initialise using first price variable in the range
-  for i in range(a, b + 1): # Loop through given range days, inclusive of price
+  for i in range(a, b + 1): # Loop through given range days, inclusive of day b
     mx = max(mx, price_at(i)) #Compares the price found against the intial stock price
   return mx
 
-def min_price(a,b):
-  mn = price_at(a)
-  for i in range(a, b + 1):
+def min_price(a, b):
+  mn = price_at(a) #Initialise using first price variable in the range
+  for i in range(a, b + 1): # Loop through given range days, inclusive of day b
     mn = min(mn, price_at(i)) #Compares the price found against the intial stock price
   return mn
 
